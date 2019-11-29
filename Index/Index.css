@@ -1,0 +1,430 @@
+html {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(240, 240, 240, 0.98);
+    width: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    z-index: -1;
+}
+
+h1 {
+    position: relative;
+    font-weight: bold;
+    font-size: 32px;
+    float: left;
+    z-index: 0;
+}
+
+/* Text field input style */
+input {
+    width: 90%;
+    height: 25px;
+}
+
+/* LOGIN POPUP ELEMENTS */
+/* Login Popup modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Login Popup Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 80%;
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 6px 6px 6px rgb(170, 170, 170);
+}
+
+/* Login popup title */
+#enterLogin {
+    position: relative;
+    margin: 5px;
+    top: -10px;
+    left: -5px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 0.1px black;
+}
+
+/* Space between Username and Password text */
+#spacer {
+    color: transparent;
+    font-size: 3px;
+}
+
+/* Login Popup Username Field */
+#usernameInput {
+    position: relative;
+    right: -3px;
+    top: -3px;
+}
+
+#usernameInput::placeholder {
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    text-indent: 5px;
+}
+
+/* Login Popup Password Field */
+#passwordInput {
+    position: relative;
+    right: -3px;
+    top: -3px;
+}
+
+#passwordInput::placeholder {
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    text-indent: 5px;
+}
+
+#signUpLink {
+    font-size: 15px;
+}
+
+/* Login Popup Submit Button */
+#sendButton {
+    border-radius: 15px;
+    border-color: black;
+    background-color: rgba(235, 235, 235, 0.98);
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    width: 120px;
+    height: 40px;
+    top: 10px;
+}
+
+/* END OF LOGIN POPUP ELEMENTS */
+
+/* HEADER ELEMENTS */
+/* to.Do Logo Img */
+#mainlogo {
+    position: relative;
+    z-index: 0;
+    width: 120px;
+    height: 80px;
+    float: left;
+    margin-top: -90px;
+    left: 20px;
+}
+
+/* Blue header bar */
+#headerRec {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    bottom: 10px;
+    z-index: -1;
+    background-color: rgb(0, 106, 228);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 4px 6px rgb(170, 170, 170);
+}
+
+/* Header text entry bar */
+#headerEntry {
+    position: relative;
+    bottom: 75px;
+    text-indent: 15px;
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+    left: 160px;
+    float: left;
+    width: 55%;
+    height: 50px;
+    background: rgb(90, 167, 255);
+    border-radius: 15px;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+}
+
+#headerEntry::placeholder {
+    color: white;
+    opacity: 0.8;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Plus img on add button */
+#plussign {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    float: left;
+    left: 0px;
+}
+
+button#add {
+    position: relative;
+    z-index: 0;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: -75px;
+    left: 170px;
+    background: white;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    position: relative;
+    opacity: 0.9;
+}
+
+/* END OF HEADER ELEMENTS */
+
+/* Placeholder text to prevent bad text formatting */
+#urtasks {
+    position: relative;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    top: -50px;
+    margin-bottom: -50px;
+    text-align: center;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* Incomplete Task Label */
+#incompTitle {
+    z-index: -1;
+}
+
+/* Title of Incomplete task */
+.taskLabel {
+    z-index: 1;
+    max-width: 95%;
+    height: 50px;
+    overflow: hidden;
+    left: 0px;
+    position: relative;
+}
+
+/* Title of Incomplete Added tasks */
+.undoneAddedTasks {
+    z-index: 1;
+    max-width: 95%;
+    height: 50px;
+    overflow: hidden;
+    left: 0px;
+    position: relative;
+}
+
+/* Text container */
+.todo {
+    z-index: -1;
+    position: relative;
+    width: 95%;
+    float: left;
+    margin-top: -5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(150, 150, 150);
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 2px 4px 6px rgb(170, 170, 170);
+}
+
+ul.todo li {
+    z-index: -1;
+    width: 90%;
+    height: 50px;
+    float: left;
+    margin-top: 18px;
+    margin-left: -20px;
+    background-color: white;
+    list-style: none;
+    font-size: 22px;
+}
+
+/* Title of Complete task */
+.taskComplete {
+    z-index: 1;
+    max-width: 95%;
+    height: 50px;
+    overflow: hidden;
+    left: 0px;
+    position: relative;
+}
+
+/* Text container */
+.done {
+    z-index: -1;
+    position: relative;
+    width: 95%;
+    float: left;
+    margin-top: -5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(150, 150, 150);
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 2px 4px 6px rgb(170, 170, 170);
+    opacity: 40%;
+}
+
+ul.done li {
+    z-index: -1;
+    width: 90%;
+    height: 50px;
+    float: left;
+    margin-top: 18px;
+    margin-left: -20px;
+    background-color: white;
+    list-style: none;
+    font-size: 22px;
+}
+
+/* Button to open Detail Modal */
+#taskButton {
+    z-index: 1;
+    position: relative;
+    width: 95%;
+    height: 70px;
+    float: left;
+    top: -71px;
+    left: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Task Detail Modal */
+.taskcontent {
+    background-color: #fefefe;
+    margin: auto;
+    z-index: 1;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 80%;
+    height: 150px;
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 6px 6px 6px rgb(170, 170, 170);
+}
+
+/* Content inside Task Detail Modal */
+.taskdetails {
+    position: relative;
+    float: left;
+    left: -250px;
+    top: 50px;
+}
+
+/* Trash Can Icon */
+#heejin { /* Ganti ga ya?? */
+    position: relative;
+    width: 30px;
+    height: 30px;
+    float: right;
+    left: -5px;
+}
+
+#trashbutton {
+    position: relative;
+    z-index: 1;
+    width: 60px;
+    height: 70px;
+    float: right;
+    margin-top: -18px;
+    border-radius: 15px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    left: 75px;
+}
+
+#wipnotice{
+    position: relative;
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Dark Mode Button */
+#darkmode {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    float: right;
+    right: 5px;
+    top: 480px;
+    border-radius: 100px;
+    background-color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+}
+
+/* Dark Mode Moon/Star Icon */
+#dmicon {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    float: right;
+    right: 8px;
+    top: 483px;
+}
+
+/* Blue bar at bottom of page */
+#footerRec {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    bottom: -1000px;
+    z-index: -1;
+    background-color: rgb(0, 106, 228);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 4px 6px rgb(170, 170, 170);
+}
+
+/* About to.Do link */
+#about {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    top: 940px;
+    left: -220px;
+}
+
+/* to.Do social media link (kyk ada aja) */
+#socmed {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    top: 940px;
+    left: -190px;
+}
+

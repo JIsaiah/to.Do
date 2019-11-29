@@ -1,0 +1,176 @@
+html {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(240, 240, 240, 0.98);
+    width: auto;
+    max-width: 1920px;
+}
+
+.text {
+    color: rgb(0, 0, 0);
+}
+
+#mainlogo {
+    position: relative;
+    z-index: 0;
+    width: 120px;
+    height: 80px;
+    float: left;
+    margin-top: -90px;
+    left: 20px;
+}
+
+#headerRec {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    bottom: 10px;
+    z-index: -1;
+    background-color: rgb(0, 106, 228);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 4px 6px rgb(170, 170, 170);
+}
+
+h1 {
+    position: relative;
+    font-weight: bold;
+    font-size: 35px;
+    top: -10px;
+    left: 5px;
+}
+
+h3 {
+    position: relative;
+    padding: 10px;
+    top: -20px;
+}
+
+form {
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+}
+
+fieldset {   
+    -moz-border-radius:5px;  
+    border-radius: 5px;  
+    -webkit-border-radius: 5px;
+    color: black;
+}  
+
+legend {
+    font-size: 22px;
+}
+
+input[type=text] {
+    border: 2px solid rgb(170, 170, 170);
+    border-radius: 15px;
+    text-indent: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    width: 40%;
+}
+
+input[type=password] {
+    border: 2px solid rgb(170, 170, 170);
+    border-radius: 15px;
+    text-indent: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    width: 40%;
+}
+
+input[type=email] {
+    border: 2px solid rgb(170, 170, 170);
+    border-radius: 15px;
+    text-indent: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    width: 40%;
+}
+
+input[type=number] {
+    border: 2px solid rgb(170, 170, 170);
+    border-radius: 15px;
+    text-indent: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    width: 6%;
+}
+
+#fromOther {
+    position: relative;
+    left: 285px;
+}
+
+#inputUse {
+    width: 99%;
+    height: 20px;
+    line-height: 120%;
+}
+
+#signedUp {
+    background-color: white;
+    border-radius: 15px;
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#footerRec {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    top: 50px;
+    z-index: -1;
+    background-color: rgb(0, 106, 228);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 4px 6px rgb(170, 170, 170);
+}
+
+#about {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    top: -5px;
+    left: 20px;
+}
+
+#socmed {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    top: -5px;
+    left: 50px;
+}
+
+#darkmode {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    float: right;
+    right: 5px;
+    top: 475px;
+    border-radius: 100px;
+    background-color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+}
+
+#dmicon {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    float: right;
+    right: 8px;
+    top: 478px;
+}

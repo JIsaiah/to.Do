@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html id="html">
+    <head>
+        <title>to.Do (Online List App)</title>
+        <!-- CSS -->
+        <link href="INDEXTESTBUILD.css" rel="stylesheet" type="text/css">
+        <!-- Nunito font -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+        <!-- JavaScript -->
+        <script src="./INDEXTESTBUILD.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- The blue bar behind everything -->
+            <div style="width:100%;" id="headerRec"></div>
+            <!-- to.Do logo -->
+            <img src="Untitled-1.png" alt="toDo logo" id="mainlogo">
+            <!-- Search Bar -->
+            <input type="text" id="headerEntry" placeholder="Search for tasks...">
+            <!-- The plus on the add button -->
+            <button onclick="addbutton()" id="add"><img src="Untitled-2.png" alt="add button" id="plussign"></button>
+        </header>
+        <!--Popup modal-->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <!--Login Form-->
+                <!--ALSO THE LOGIN DOESNT SAVE TO LOCAL STORAGE YET BICH-->
+                <form id="loginForm" onsubmit='return false'>
+                    <label>
+                        <p id="enterLogin">Please enter your login info</p>
+                        Username:
+                        <input type="text" name="username" id="usernameInput" placeholder="Enter your username here..."/>
+                        <p id="spacer">.</p>
+                        Password:
+                        <input type="password" name="password" id="passwordInput" placeholder="Enter your password here..."/>
+                        <br/>
+                        <a href="../SignUpPage/SignUpPage.html" class="links" id="signUpLink">Don't have an account? Sign up here!</a>
+                    </label>
+                    <br>
+                    <input type="submit" value="Submit" id="sendButton" onclick="login()"></input>
+                </form>
+            </div>
+        </div>
+
+        <h1 id="urtasks">to.Do aims to make sure you complete all current tasks before starting new ones. to.Do so (badum-tss), deleting
+            a task will delete the top-most task, so ensure you have completed that task before completing another.
+        </h1> <!--Placeholder text to prevent bad text formatting-->
+        <h1 id="incompTitle">Incomplete Tasks</h1>
+            <!-- Uncompleted task container -->
+            <ul class="todo" id="incompCont">
+                <li id="undoneTaskExample">
+                    <label id="taskLabel1" class="taskLabel">Tasks you add will appear here</label>
+                    <button id="trashbutton" onclick="trash()"><img src="Untitled-3.png" alt="trashbin" id="heejin"></button>
+                </li>      
+            </ul>
+
+        <!--COMPLETE TASKS ARE A WIP AND ARE NOT READY FOR USE-->
+        <h1 id="compTitle">Complete Tasks</h1> <h1 id="wipnotice">(THIS IS STILL A WIP SRY)</h1>
+        <div class="doneContainer">
+            <!-- Completed task container -->
+            <ul id="finishedCont" class="done">
+                <li id="doneTaskExample">
+                    <label class="taskComplete">Tasks you've completed will appear here</label>
+                    <button id="trashbutton" onclick="trash()"><img src="Untitled-3.png" alt="trashbin" id="heejin"></button>
+                </li>
+            </ul>
+        </div>
+        <button id="darkmode" onclick="darken()"><image src="nightmode-512.png" id="dmicon"></image></button>
+    </body>
+        <div id="footerRec"></div>
+        <a href="../Instructions/Instructions.html" class="links" id="about">About to.Do</a>
+        <a href="../SocMed/SocMed.html" class="links" id="socmed">Social Media</a>
+</html>

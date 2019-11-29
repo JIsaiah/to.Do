@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html id="html">
+    <head>
+        <title>Sign up for to.Do</title>
+        <!-- CSS -->
+        <link href="SignUpPage.css" rel="stylesheet" type="text/css">
+        <!-- Nunito font -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+        <!-- JavaScript -->
+        <script src="../SignUpPage/SignUpPage.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- The blue bar behind everything -->
+            <div style="width:100%;" id="headerRec"></div>
+            <!-- to.Do logo -->
+            <a href="../Index/Index.html" id="redirecthome"><img src="Untitled-1.png" alt="toDo logo" id="mainlogo"></a>
+        </header>
+
+        <h1 id="signintext">Sign up for to.Do</h1>
+        <h3 id="why">You need to sign up for to.Do because your tasks will be
+            saved to your local storage so only you can access your tasks
+            on your device.
+        </h3>
+        <form>
+            <fieldset id="pinfo">
+                <legend>Please fill out the fields below</legend>
+                <p>
+                    <label for="uName">Username:</label>
+                    <input id="userName" name="username" type="text">
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input id="password" name="passWord" type="text">
+                </p>
+                <p>
+                    <label for="confirmPassword">Confirm password:</label>
+                    <input id="confirmPassword" name="confirmpassWord" type="password">
+                </p>
+            </fieldset>
+        </form>
+        <br>
+        <input type="submit" value="Submit" id="signedUp" onclick="sendinfo()"></input>
+        <button id="darkmode" onclick="darken()"><image src="nightmode-512.png" id="dmicon"></image></button>
+    </body>
+    <footer>
+        <div id="footerRec"></div>
+        <a href="../Instructions/Instructions.html" class="links" id="about">About to.Do</a>
+        <a href="../SocMed/SocMed.html" class="links" id="socmed">Our Social Media</a>
+    </footer>
+</html>
